@@ -1,63 +1,62 @@
 
-# Netflix 🎥
-
-## Contents
-- Introduction
-- Starter Code
-- Provided Functions
-- Deliverable
-- Extra Help (If Needed)
-
-## Introduction
-
-For this milestone, you will collaborate with the Netflix development team to prototype a new feature: the random show suggestion. The team has already written code that presents a collection of shows in various genres, as well as code that displays a single show on the webpage. Your objective is to complete the two functions in script.js and ensure that the correct outcome is shown on the page based on the user's selection.
-
-The final feature should function as follows:
-
-When a user clicks on the dropdown menu labeled "Genres," they can make a selection. If they choose a specific genre, a random show from that genre will be displayed on the screen. If they select "Random," a show from any genre will be shown. Choosing "All" is already working.
-
-The final user experience should function [like this](https://imgur.com/a/pQPkzI8).
-
-## Starter Code
-
-Take a look at the top of script.js. There are three arrays that correspond to our genres of drama, fantasy, and comedy shows. Each array holds five shows.
-
-You'll notice two empty functions have already been declared in script.js. To complete the Milestone, you'll add code to the body of each of these functions.
-
-⚠️ Warning: Don't change the variables or names of functions! Changing them can cause problems with the end user experience.
+# Netflix Clone 🎥
 
 
-## Provided Functions
-The Netflix devs have written two helper functions you'll need to use to complete the feature. These functions are defined in `provided.js` but they can be called from `script.js`. 
+🎥 A mini Netflix clone that suggests random shows based on user-selected genres, built with **HTML**, **CSS**, and **JavaScript**.
 
-> **🗒 Note:** The only file you'll need to edit to complete the project is `script.js`.
+---
 
-<hr>
+## 🕹️ Live Demo
+[Visit Netflix Clone](https://s-meher.github.io/Netflix_Clone/)
 
-1. `getRandomNumber(min, max)`
+---
 
-This function accepts two numbers: `min` and `max`. It returns a randomly generated number in between the supplied min and max (inclusive). Try calling `getRandomNumber(0, 4)` in the console a few times to see how it works.
-<hr>
+## 📚 Overview
+This project replicates part of Netflix’s search experience by randomly suggesting shows based on the selected genre.  
+Users can choose "Drama", "Fantasy", "Comedy", or "Random" to discover a show.
 
-2. `displayShow(show)`
+This simulates working in a modular team where developers build specific functions fitting into a larger project.
 
-This function accepts the name of a show (such as "The Witcher") and displays it on the page. It uses the _exact formatting_ of the strings in the arrays to find and display the correct show. Try running `displayShow("The Witcher")` and `displayShow("The Queen's Gambit")` in the console and check the page to see what happens.
+---
+
+## 🔨 Built With
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+---
+
+## ✨ Key Features
+- **Choose Random Genre:** Randomly select "Drama", "Fantasy", or "Comedy".
+- **Display Random Show:** Pick a random show from the selected genre.
+- Integrated with pre-written utility functions for random numbers and display.
+- Responsive, clean UI showcasing different genres.
+
+---
+
+## 🚀 How It Works
+- `chooseRandomGenre()` — Randomly picks one genre.
+- `displayRandomShow(genre)` — Displays a random show based on selected or random genre.
+- Helper functions from `provided.js` handle random number generation and DOM updating.
+
+---
+
+## 📂 Project Structure
+- `index.html` — Main HTML page
+- `style.css` — Custom styles
+- `script.js` — Main logic for random show suggestion
+- `provided.js` — Provided helper functions (getRandomNumber, displayShow)
+- `shows.js` — Arrays containing different genre shows
+- `img/` — Folder containing images for each genre (comedy, drama, fantasy)
+- `README.md` — Project description
+- `.gitignore` — Files to ignore on GitHub
+- `.eslintrc.json` — ESLint configuration file
+- `package.json` — Project metadata
 
 
-## Deliverable
+---
 
-Below are the requirements for each of the three functions you need to finish in `script.js`. 
+## 🙌 Acknowledgements
+- Starter structure inspired by real Netflix functionality.
 
-### 1. **`chooseRandomGenre()`**
- 
-This function should return a random genre that is either "drama", "fantasy", or "comedy". You can use the provided `getRandomNumber()` function to randomly select one of the three possibilities.
-
-<hr>
-
-### 2. **`displayRandomShow(genre)`**
-
-The parameter `genre` will be a string that is either "drama", "fantasy", "comedy", or "random". If the parameter is "random", you'll use the `chooseRandomGenre()` function from above to reassign the parameter to one of the three possibilities. Otherwise based on the `genre` parameter, you should display a random show from the correspondding array. 
-
-
-## Extra Help (If Needed)
-You have everything you need to get started and complete this task. You should try it on your own first! Use your decomposition skills to break each task down into smaller steps and don't hesitate to practice your Google Fu. If you're still having trouble, check out `HINTS.md` for some extra help.
+---
